@@ -1,0 +1,21 @@
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://bbfxdxr0hi2j"]
+
+[ext_resource type="Texture2D" uid="uid://cu3iow0urmjed" path="res://textures/tiles.png" id="1_3bga1"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_rrpra"]
+tile_data = PackedInt32Array(0, 131072, 536870912, 65536, 65536, 0, 131072, 131072, 536870912, 196608, 131072, 536870912, 1, 131072, 536870912, 65537, 65536, 0, 131073, 131072, 805306368, 196609, 65536, 0, 2, 131072, 268435456, 65538, 131072, 536870912, 131074, 131072, 536870912, 196610, 131072, 805306368)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8sgce"]
+texture = ExtResource("1_3bga1")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_8sgce")
+pattern_0 = SubResource("TileMapPattern_rrpra")
