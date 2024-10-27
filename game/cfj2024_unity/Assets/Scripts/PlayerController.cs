@@ -23,7 +23,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        var move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        // var move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        var horizontal = Input.GetKey(KeyCode.A) ? -1 : Input.GetKey(KeyCode.D) ? 1 : 0;
+        var vertical = Input.GetKey(KeyCode.S) ? -1 : Input.GetKey(KeyCode.W) ? 1 : 0;
+        var move = new Vector2(horizontal, vertical);
         if (move.magnitude > 1)
         {
             move.Normalize();
