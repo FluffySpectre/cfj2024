@@ -10,6 +10,11 @@ public class AnimatedSprite : MonoBehaviour
     private float timer;
     private int currentFrame;
 
+    public void SetFrames(Sprite[] newFrames)
+    {
+        frames = newFrames;
+    }
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
